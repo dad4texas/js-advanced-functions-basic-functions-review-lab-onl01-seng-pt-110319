@@ -7,11 +7,23 @@ function mondayWork(activity="go to the office") {
     return `This Monday, I will ${activity}.`
 }
 
-let fn = function() {
-  console.log("Yet more razzling")
-}
+function wrapAdjective(style ="*") {
+ return function(special = "special") {
+    return `You are ${style}${special}${style}!`
+ }  
+ }
 
-let fn = function() {
-  console.log("Yet more razzling")
-} //=> undefined
-fn //=> ƒ () { console.log("Yet more razzling") }
+ const Calculator = {
+   add: function(a, b) {
+    return a + b;
+   },
+   subtract: function(a, b) {
+       return a-b;
+   },
+   multiply: function(a, b) {
+       return a * b
+   },
+   divide: function(a, b) {
+       return (a/b)
+   }
+}
