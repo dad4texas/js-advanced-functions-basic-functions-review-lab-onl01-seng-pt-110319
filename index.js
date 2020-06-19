@@ -10,3 +10,8 @@ function mondayWork(activity="go to the office") {
 let fn = function() {
   console.log("Yet more razzling")
 }
+
+let fn = function() {
+  console.log("Yet more razzling")
+} //=> undefined
+fn //=> ƒ () { console.log("Yet more razzling") }
