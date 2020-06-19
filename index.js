@@ -32,7 +32,7 @@ function actionApplyer(int, arr) {
         return int
     }
     for(let i = 0; i< arr.length; i++) {
-        
+
         int = arr[i](int)
     }
     return int
