@@ -27,3 +27,13 @@ function wrapAdjective(style ="*") {
        return (a/b)
    }
 }
+function actionApplyer(int, arr) {
+    if (arr.length === 0) {
+        return int
+    }
+    for(let i = 0; i< arr.length; i++) {
+        
+        int = arr[i](int)
+    }
+    return int
+}
